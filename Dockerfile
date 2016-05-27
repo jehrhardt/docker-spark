@@ -2,9 +2,6 @@ FROM java:8-jre
 
 MAINTAINER Jan Ehrhardt <jan.ehrhardt@gmail.com>
 
-# Ensure bash and curl are available
-RUN apk add --update bash curl
-
 # Install Spark
 RUN mkdir /opt
 RUN curl -s http://ftp.halifax.rwth-aachen.de/apache/spark/spark-1.6.1/spark-1.6.1-bin-hadoop2.6.tgz | tar xvz -C /opt
